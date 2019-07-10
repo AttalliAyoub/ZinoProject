@@ -8,14 +8,17 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SharedModule } from "./shared/shared.module";
+import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
+import { NativeComponent } from './native/native.component';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    HomeComponent
+    HomeComponent,
+    NativeComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { HomeComponent } from './home/home.component';
     AngularFirestoreModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [BarcodeScanner],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
