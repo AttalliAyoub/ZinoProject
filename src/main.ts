@@ -11,3 +11,8 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+const a = "ayoub";
+const b = "attalli";
+const c = "bla bla";
