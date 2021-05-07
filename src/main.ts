@@ -16,3 +16,4 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 const a = "ayoub";
 const b = "attalli";
 const c = "bla bla";
+const d = "sa sa sa";
